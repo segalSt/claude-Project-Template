@@ -139,17 +139,11 @@ not repeat the text of these rules.
   text comes from the bug description.
 - After a bug is fixed — mark it Fixed in the findings file.
 
-## Token economy (strict requirement)
+## Token economy
 
-- Keep intermediate text between and around tool calls to the bare
-  minimum: no "I'll now…", "let me check…", no preambles, no restating
-  what was just read, no step-by-step reports of every action. Wrap-up —
-  1-2 sentences on the result. Longer text only when the user explicitly
-  asks for it or the point can't be understood without it.
-- Plain language, no jargon; skip meaningless(!) preambles and afterwords
-  (keep meaningful ones); concise and clear, not cryptic.
-- Keep frequently read/updated files (devHistory, plan, context file) short —
-  detail lives in step files/code, not in them.
+Moved to **`templates/token-economy.md`** (strict) — output brevity, file-size
+discipline, model right-sizing, sub-agent delegation, session-length. Not
+duplicated here; update it there.
 
 ## Language
 

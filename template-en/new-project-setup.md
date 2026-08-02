@@ -56,6 +56,7 @@ Don't move on to step 2 until at least items 1-4 have been answered.
   <ProjectName>Prompt.md      <- from templates/context-file-template.md
   commands.md                 <- copy of the template, unchanged
   working-conventions.md      <- copy of the template, unchanged
+  token-economy.md            <- copy of the template, unchanged
   actualization-rules.md      <- copy of the template, unchanged
   docs/
     SPEC.md                    <- from templates/SPEC-template.md, sections 1/3/4
@@ -88,6 +89,7 @@ Explicitly ask the user whether to copy as-is (without substantive
 edits at this step):
 - `commands.md` (commands `-commands`/`-QA`/`-commit`);
 - `working-conventions.md` (general working conventions);
+- `token-economy.md` (token-economy rules);
 - `actualization-rules.md` (rules for keeping documentation/artifacts up to date);
 - `docs/errors.md` (empty template for the discrepancies table);
 - `docs/devHistory.md` (empty session log);

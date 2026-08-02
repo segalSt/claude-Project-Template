@@ -1,7 +1,7 @@
 # Синхронизация RU / EN шаблона · Template RU / EN sync
 
 **Русская версия — источник истины.** Файлы:
-`README.md`, `new-project-setup.md`, `migration.md` + `templates/` (9 файлов).
+`README.md`, `new-project-setup.md`, `migration.md` + `templates/` (9 файлов, вкл. `token-economy.md`).
 
 **Английская копия — `template-en/`** (зеркало той же структуры).
 
@@ -10,20 +10,16 @@
 структура, та же карта командных токенов. Расхождение RU/EN считается
 устареванием (правила актуализации).
 
-Карта токенов (RU → EN):
-`-старт`→`-start`, `-коммит`→`-commit`, `-команды`→`-commands`,
-`-тбд`→`-tbd`, `-план`→`-plan`, `--шаг`→`--step`, `-new`→`-new`,
-`-миграция`→`-migrate`;
-под-флаги `-plan`: `-s`→`-s`, `-а`→`-a`, `--м`→`--m`, `-к`→`-c`,
-`--н`→`--hide-done`; под-флаги `-new`: `-т`→`-t`, `-s`→`-s`; под-флаг
-`-команды`: `-к`→`-n` (создать команду); `-QA`→`-QA`.
-Примечание: `-к` контекстно-зависим — под `-plan` это `-c` (concise),
-под `-команды` это `-n` (new command).
+Карта токенов: токены команд теперь ОДИНАКОВЫ в RU и EN (латиница) —
+`-start`, `-commands`, `-plan`, `-QA`, `-new`, `-tbd`, `-commit`, `-drift`,
+`-park`. Аргументы — с двойным дефисом (`--s`, `--a`, `--c`, `--m`, `--t`,
+`--fix`, `--step`, `--day`, `--full`, `--hide-done`); команды — с одним.
+Токены команд полностью совпадают в RU и EN (латиница).
 
 ---
 
 **Russian version is the source of truth.** Files: `README.md`,
-`new-project-setup.md`, `migration.md` + `templates/` (9 files).
+`new-project-setup.md`, `migration.md` + `templates/` (9 files, incl. `token-economy.md`).
 **English copy — `template-en/`** (mirror).
 
 **Rule:** on ANY change to the Russian template, update the matching file

@@ -54,6 +54,7 @@
   <ИмяПроекта>Prompt.md      <- из templates/context-file-template.md
   commands.md                 <- копия шаблона, без изменений
   working-conventions.md      <- копия шаблона, без изменений
+  token-economy.md            <- копия шаблона, без изменений
   actualization-rules.md      <- копия шаблона, без изменений
   docs/
     SPEC.md                    <- из templates/SPEC-template.md, разделы 1/3/4
@@ -86,6 +87,7 @@
 правок на этом шаге):
 - `commands.md` (команды `-команды`/`-QA`/`-коммит`);
 - `working-conventions.md` (общие рабочие конвенции);
+- `token-economy.md` (правила экономии токенов);
 - `actualization-rules.md` (правила актуализации документации/артефактов);
 - `docs/errors.md` (пустой шаблон таблицы расхождений);
 - `docs/devHistory.md` (пустой журнал сессий);
