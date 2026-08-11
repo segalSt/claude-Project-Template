@@ -49,7 +49,9 @@
 - точка входа `<Проект>Prompt.md`, `commands.md`, `working-conventions.md`,
   `actualization-rules.md`;
 - `docs/SPEC.md`, `docs/plan.md` (+ `docs/plan/` при разрастании — см. порог в
-  `templates/plan-template.md`), `docs/errors.md`, `docs/devHistory.md`.
+  `templates/plan-template.md`), `docs/errors.md`, `docs/qa-findings.md`,
+  `docs/devHistory.md` (+ `docs/history/` при разрастании — тот же принцип,
+  порог в `templates/devHistory.md`).
 
 ## Точки входа
 

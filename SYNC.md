@@ -1,7 +1,7 @@
 # Синхронизация RU / EN шаблона · Template RU / EN sync
 
 **Русская версия — источник истины.** Файлы:
-`README.md`, `new-project-setup.md`, `migration.md` + `templates/` (9 файлов, вкл. `token-economy.md`).
+`README.md`, `new-project-setup.md`, `migration.md` + `templates/` (10 файлов, вкл. `token-economy.md`, `qa-findings.md`).
 
 **Английская копия — `template-en/`** (зеркало той же структуры).
 
@@ -19,7 +19,7 @@
 ---
 
 **Russian version is the source of truth.** Files: `README.md`,
-`new-project-setup.md`, `migration.md` + `templates/` (9 files, incl. `token-economy.md`).
+`new-project-setup.md`, `migration.md` + `templates/` (10 files, incl. `token-economy.md`, `qa-findings.md`).
 **English copy — `template-en/`** (mirror).
 
 **Rule:** on ANY change to the Russian template, update the matching file

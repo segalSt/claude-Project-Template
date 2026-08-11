@@ -49,7 +49,8 @@ Key consequences (must be honored by `plan.md`, the commands, `migration.md`,
   `actualization-rules.md`;
 - `docs/SPEC.md`, `docs/plan.md` (+ `docs/plan/` when it grows — see the
   threshold in `templates/plan-template.md`), `docs/errors.md`,
-  `docs/devHistory.md`.
+  `docs/qa-findings.md`, `docs/devHistory.md` (+ `docs/history/` when it
+  grows — same principle, threshold in `templates/devHistory.md`).
 
 ## Entry points
 

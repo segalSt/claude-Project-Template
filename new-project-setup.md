@@ -4,7 +4,8 @@
 новом чате, когда нужно начать новый проект со структурой контекста,
 отработанной здесь (tagsExpert): `commands.md`, `working-conventions.md`,
 `actualization-rules.md`, `docs/SPEC.md`, `docs/plan.md`, `docs/errors.md`,
-`docs/devHistory.md`, точка входа `<ИмяПроекта>Prompt.md`. Шаблоны всех
+`docs/qa-findings.md`, `docs/devHistory.md`, точка входа
+`<ИмяПроекта>Prompt.md`. Шаблоны всех
 этих файлов — в `templates/`, копия той же структуры, что уже
 используется в tagsExpert.
 
@@ -62,6 +63,7 @@
     plan.md                    <- из templates/plan-template.md (без шагов - шаги 0+
                                   добавляются после того как SPEC согласован)
     errors.md                  <- из templates/errors.md, пустая таблица
+    qa-findings.md             <- из templates/qa-findings.md, пустая таблица
     devHistory.md              <- из templates/devHistory.md, без записей -
                                   первая запись ("Сессия 1") добавляется в конце
                                   ЭТОЙ сессии, когда бутстрап закончен
@@ -90,6 +92,7 @@
 - `token-economy.md` (правила экономии токенов);
 - `actualization-rules.md` (правила актуализации документации/артефактов);
 - `docs/errors.md` (пустой шаблон таблицы расхождений);
+- `docs/qa-findings.md` (пустой шаблон таблицы QA-находок);
 - `docs/devHistory.md` (пустой журнал сессий);
 - `docs/plan.md` (шаблон с мета-правилами, без шагов).
 

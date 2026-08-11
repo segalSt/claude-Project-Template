@@ -4,7 +4,8 @@ Prompt for the assistant (Claude). Use it as the first message in a
 new chat when you need to start a new project with the context
 structure worked out here (tagsExpert): `commands.md`, `working-conventions.md`,
 `actualization-rules.md`, `docs/SPEC.md`, `docs/plan.md`, `docs/errors.md`,
-`docs/devHistory.md`, entry point `<ProjectName>Prompt.md`. Templates for all
+`docs/qa-findings.md`, `docs/devHistory.md`, entry point
+`<ProjectName>Prompt.md`. Templates for all
 these files are in `templates/` — a copy of the same structure already
 used in tagsExpert.
 
@@ -64,6 +65,7 @@ Don't move on to step 2 until at least items 1-4 have been answered.
     plan.md                    <- from templates/plan-template.md (without steps — steps 0+
                                   are added after the SPEC is agreed)
     errors.md                  <- from templates/errors.md, empty table
+    qa-findings.md             <- from templates/qa-findings.md, empty table
     devHistory.md              <- from templates/devHistory.md, without entries —
                                   the first entry ("Session 1") is added at the end of
                                   THIS session, once the bootstrap is finished
@@ -92,6 +94,7 @@ edits at this step):
 - `token-economy.md` (token-economy rules);
 - `actualization-rules.md` (rules for keeping documentation/artifacts up to date);
 - `docs/errors.md` (empty template for the discrepancies table);
+- `docs/qa-findings.md` (empty template for the QA-findings table);
 - `docs/devHistory.md` (empty session log);
 - `docs/plan.md` (template with meta-rules, without steps).
 

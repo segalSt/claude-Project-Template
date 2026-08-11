@@ -160,3 +160,24 @@ If a change to reusable conventions (`working-conventions`, `commands`,
 `actualization-rules`) is a GENERAL improvement, not project-specific — ask
 the user whether to also apply it to the general template (RU source + EN
 mirror, in the same pass — see `SYNC.md`). Project-specific parts stay local.
+
+## 14. Logic/interface changes — reflect in tests and QA
+
+Any change to business logic or interface behavior must, in the same pass
+as the change itself, check and if necessary update:
+
+1. **Automated tests** — if the old behavior was covered by a test, the
+   test is updated along with the code (it doesn't stay green by accident,
+   and it doesn't stay broken "for later"). If the new behavior isn't
+   covered by tests yet — this is recorded in the test catalog
+   (`tests-catalog.csv`, rule 3) as a task, not a silent gap.
+2. **Manual QA for the relevant step** (the "Manual QA" section at the end
+   of the step the change relates to) — items describing the old behavior
+   are fixed or removed; new items are added for changed/new behavior as
+   needed. A stale checklist item nobody fixed is also a discrepancy under
+   rule 9, not a triviality.
+
+If it's unclear whether new coverage is needed (e.g. the change is too
+small/cosmetic) — act as in rule 9: report it in chat and ask whether to
+actualize now or file it as a separate task, rather than deciding
+unilaterally.
