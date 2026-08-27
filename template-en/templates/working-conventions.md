@@ -21,26 +21,17 @@ by default.
   ANY project artifact — code, SPEC, mockups, context file) —
   `templates/actualization-rules.md`, item 7.
 - **Discussion is not permission.** Breaking a task into steps, clarifying
-  questions, evaluating/analyzing the request text — this is not a command to start edits.
+  questions, evaluating/analyzing the request text — not permission to start
+  edits — see `templates/actualization-rules.md`, rule 7. Not duplicated here.
 - **No assumptions — verify against the source first (non-avoidable).** Before
   stating any factual claim about code, data, or behavior as an answer, read the
   actual source (code, XML, logs). If you need a source you don't have, **ALWAYS** ask
   the user for it; only if it is confirmed unavailable may you state the claim,
   clearly signed `[assumption:]`. Never present a guess as a verified answer.
 - **The only command that means permission to start work —
-  `-start <number>`** (see `commands.md`), where the number is the ROW number from
-  the last status table shown in chat for the current step/section.
-  Free-form phrasings ("start", "fix", "go ahead", a plain mention
-  of a step number, agreement by meaning, etc.) are NOT considered permission, even
-  if it seems from the correspondence that the user has already agreed in substance.
-  If it's unclear which table/row is meant — ask, don't
-  treat it as permission by default.
-  **Mechanical gate (binary, no judgment):** an edit/write may fire ONLY when the
-  user's immediately preceding message is exactly `-start`/`-start <n>`. "yes" /
-  "do it" / "go" / "ok" / "apply" / "keep it" / "make it shorter" / "add it" etc. do
-  NOT authorize an edit — show the diff and wait. One `-start` applies ONLY the
-  change(s) in the preceding diff (no bundling extra/adjacent edits). Propose and
-  apply are separate turns: a turn that shows a diff does not also edit.
+  `-start <number>`** — the full mechanics (gate, row number, what
+  counts/doesn't count as permission) are described in `commands.md`. Not
+  duplicated here.
 - Non-trivial architectural/design decisions — first an explicit question with
   options and a recommendation, wait for explicit agreement, don't implement
   and don't redo in circles (implemented → discussed again → threw away —

@@ -121,6 +121,14 @@ _Convention: a command is a single-dash token (`-plan`); its arguments/flags use
     in a row) — ask, don't start work.
   - After completion — update the status of this task in the plan and explicitly
     state in chat which plan step(s) changed.
+  - **Mechanical gate (binary, no judgment):** an edit/write may fire ONLY
+    when the user's immediately preceding message is exactly `-start`/
+    `-start <number>`. "yes" / "do it" / "go" / "ok" / "apply" / "keep it" /
+    "make it shorter" / "add it" etc. do NOT authorize an edit — show the
+    diff and wait.
+  - One `-start` applies ONLY the change(s) in the preceding shown diff (no
+    bundling extra/adjacent edits). Propose and apply are separate turns: a
+    turn that shows a diff does not also edit.
 
 - **`-start --step <number>`** — switch to working on step `<number>`,
   WITHOUT starting any specific task:

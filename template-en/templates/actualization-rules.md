@@ -109,9 +109,7 @@ just made or discussed:
    - add it as a separate task at the end of the current plan step, without
      implementing it now.
 3. Don't decide on your own and don't defer without an explicit decision from the
-   user — as everywhere, discussion/stating a fact is by itself
-   not permission to act (see item 7 above and `-start <number>` in
-   `commands.md`).
+   user — discussion/stating a fact is not permission to act, see rule 7.
 
 ## 10. Definition of Done — the "Done" status
 

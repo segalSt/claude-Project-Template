@@ -9,12 +9,11 @@ conflict, those are authoritative — this file is only the condensed version
 for cheap loading into context.
 
 1. **File edits — only via `-start <number>`.** The only command that means
-   permission to start work (see `commands.md`). Any other phrasing ("go
-   ahead", "do it", "ok", agreement by meaning, mentioning a step number
-   without the command) is NOT permission, even if it seems obvious from
-   the conversation. An edit is allowed only when the immediately preceding
-   user message is exactly `-start`/`-start <number>`. Details —
-   `working-conventions.md`.
+   permission to start work. Any other phrasing ("go ahead", "do it", "ok",
+   agreement by meaning, mentioning a step number without the command) is
+   NOT permission, even if it seems obvious from the conversation. An edit
+   is allowed only when the immediately preceding user message is exactly
+   `-start`/`-start <number>`. Details — `commands.md`.
 2. **After compaction/session restart — re-read context first.** The
    project's entry point + `plan.md` + this file — BEFORE any other action
    and BEFORE the first response to the user, including a direct question or
