@@ -5,7 +5,7 @@ ad-hoc docs or on an old layout) to the current template structure. Three
 scenarios:
 
 - **A. Adopt** — a project with no template structure at all → create the
-  context files (`commands.md`, `working-conventions.md`,
+  context files (`commands.md`, `guardrails.md`, `working-conventions.md`,
   `actualization-rules.md`, `docs/SPEC.md`, `docs/plan.md`, `errors.md`,
   `devHistory.md`, entry point).
 - **B. Split** — a project already on the template, but with a monolithic
@@ -40,8 +40,8 @@ indicated (same policy as `new-project-setup.md`).
 
 ## Interactive process — the `-migrate` command
 
-Migration is triggered by the **`-migrate`** command (RU mirror — `-миграция`)
-and runs as a dialogue:
+Migration is triggered by the **`-migrate`** command and runs as a
+dialogue:
 
 1. **Invocation.** The user types `-migrate`.
 2. **Input.** The assistant asks: (a) the path to the target project folder;

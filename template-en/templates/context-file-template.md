@@ -35,12 +35,13 @@ what is NOT committed, what to do next).
 
 ## Where to start in a new session
 
-1. `docs/devHistory.md` (at least the most recent entry).
-2. `docs/SPEC.md` in full.
-3. `docs/plan.md` — step-by-step plan; `docs/errors.md` — known
+1. `guardrails.md` — hard rules, always first, cheap file.
+2. `docs/devHistory.md` (at least the most recent entry).
+3. `docs/SPEC.md` in full.
+4. `docs/plan.md` — step-by-step plan; `docs/errors.md` — known
    discrepancies.
-4. Run the tests/build, make sure the starting point works.
-5. **After reading — produce a short brief** with EXPLICIT sections:
+5. Run the tests/build, make sure the starting point works.
+6. **After reading — produce a short brief** with EXPLICIT sections:
    **Project goal** (one line), **Done**, **Current state** (incl.
    uncommitted / environment gotchas), **Plan** (next steps), **Under
    discussion** (open TBD/Open), **Reminders**. Keep it short, 1-2 items per
@@ -65,8 +66,9 @@ versions, known IDE bugs, etc.)._
 
 ## Files to start reading from
 
-1. `docs/devHistory.md`
-2. `docs/SPEC.md`
-3. `docs/plan.md`
-4. `docs/errors.md`
-5. _(key code files of this project)_
+1. `guardrails.md`
+2. `docs/devHistory.md`
+3. `docs/SPEC.md`
+4. `docs/plan.md`
+5. `docs/errors.md`
+6. _(key code files of this project)_

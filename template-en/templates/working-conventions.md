@@ -6,6 +6,13 @@ work on a project, not about the project itself. The project context file
 (equivalent of `tegExpertPrompt.md`) should state only differences/clarifications,
 not repeat the text of these rules.
 
+**Reference file — not required to be loaded in full every session.** The
+mandatory minimum of critical gates (what actually blocks an edit/"Done"
+status) is in `guardrails.md` — re-read that always. Come here as needed,
+when a decision requires the detail/rationale/exception behind a specific
+rule beyond what `guardrails.md` covers, not by loading this file in full
+by default.
+
 ## Changes and permissions
 
 - Changes to files — only after explicit permission from the user, if

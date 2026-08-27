@@ -3,9 +3,15 @@
 Reusable file — not tied to a specific project, copied into
 other repositories as-is. Collects all the rules about keeping project
 documentation/artifacts up to date in one place —
-`commands.md`, `working-conventions.md` and the project context file
-should reference here instead of duplicating the rule text. If a
+`commands.md`, `guardrails.md`, `working-conventions.md` and the project
+context file should reference here instead of duplicating the rule text. If a
 rule changes — it should only be changed here.
+
+**Reference file — not required to be loaded in full every session/after
+every compaction.** The mandatory minimum is `guardrails.md` (it is the
+fallback in rule 4 below). Come here for the full text of a specific rule,
+when the situation needs detail/rationale beyond what `guardrails.md`
+already covers.
 
 ---
 
@@ -41,9 +47,9 @@ test addition/rename/deletion.
 ## 4. Re-reading context after compaction
 
 After context compaction (compaction/summary) or a session restart —
-the first thing to do is to re-read the project context file and the work plan (or
-at least this rules file), rather than acting on the auto-generated
-summary. **This is a mandatory action, not a recommendation** — performed BEFORE
+the first thing to do is to re-read the project context file, the work plan,
+and `guardrails.md` (or at least `guardrails.md`, if nothing else is
+available), rather than acting on the auto-generated summary. **This is a mandatory action, not a recommendation** — performed BEFORE
 any other action and BEFORE the first response to the user after compaction,
 including a response to a direct question or a short clarification. The FIRST action is:
 re-read + produce the short brief; no file edits and no task work until that is done —
@@ -181,3 +187,21 @@ If it's unclear whether new coverage is needed (e.g. the change is too
 small/cosmetic) — act as in rule 9: report it in chat and ask whether to
 actualize now or file it as a separate task, rather than deciding
 unilaterally.
+
+## 15. `guardrails.md` mirror — keep it in sync with the source
+
+`guardrails.md` is not illustrative (unlike mockups/diagrams, rule 11): it's
+a condensed retelling of specific critical gates (currently: the `-start`
+gate, re-reading after compaction, DoD, "discussion is not permission",
+proactively reporting drift, never asserting without a source) drawn from
+`working-conventions.md` and `actualization-rules.md`. Since it substitutes
+for the full file as the mandatory minimum, a stale retelling is just as
+dangerous as stale code.
+
+Rule: any edit to the text of ANY rule that `guardrails.md` retells updates
+`guardrails.md` in the same pass as the source itself — don't defer it and
+don't file it as a separate task (unlike rule 9, there's no "now or later"
+choice here, since `guardrails.md` has already signed up for the role of
+mandatory minimum). If an edit expands the set of gates `guardrails.md`
+should cover (a new rule of the same "blocking" caliber) — add its item
+here too, in the same pass.

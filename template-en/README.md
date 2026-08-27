@@ -45,8 +45,8 @@ Key consequences (must be honored by `plan.md`, the commands, `migration.md`,
 
 ## Files
 
-- entry point `<Project>Prompt.md`, `commands.md`, `working-conventions.md`,
-  `actualization-rules.md`;
+- entry point `<Project>Prompt.md`, `commands.md`, `guardrails.md`,
+  `working-conventions.md`, `actualization-rules.md`;
 - `docs/SPEC.md`, `docs/plan.md` (+ `docs/plan/` when it grows — see the
   threshold in `templates/plan-template.md`), `docs/errors.md`,
   `docs/qa-findings.md`, `docs/devHistory.md` (+ `docs/history/` when it
@@ -57,5 +57,5 @@ Key consequences (must be honored by `plan.md`, the commands, `migration.md`,
 - **New project from scratch** → `new-project-setup.md` (its Step -1 forks
   to `/wayfinder` first if the idea is too big/foggy for one session).
 - **Migrate an existing project** to this structure → `migration.md`
-  (command `-migrate`/`-миграция`).
+  (command `-migrate`).
 - RU/EN template sync → `SYNC.md`.

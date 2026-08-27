@@ -2,8 +2,8 @@
 
 Промпт для ассистента (Claude). Использовать как первое сообщение в
 новом чате, когда нужно начать новый проект со структурой контекста,
-отработанной здесь (tagsExpert): `commands.md`, `working-conventions.md`,
-`actualization-rules.md`, `docs/SPEC.md`, `docs/plan.md`, `docs/errors.md`,
+отработанной здесь (tagsExpert): `commands.md`, `guardrails.md`,
+`working-conventions.md`, `actualization-rules.md`, `docs/SPEC.md`, `docs/plan.md`, `docs/errors.md`,
 `docs/qa-findings.md`, `docs/devHistory.md`, точка входа
 `<ИмяПроекта>Prompt.md`. Шаблоны всех
 этих файлов — в `templates/`, копия той же структуры, что уже
@@ -110,6 +110,7 @@
 <project-root>/
   <ИмяПроекта>Prompt.md      <- из templates/context-file-template.md
   commands.md                 <- копия шаблона, без изменений
+  guardrails.md               <- копия шаблона, без изменений
   working-conventions.md      <- копия шаблона, без изменений
   token-economy.md            <- копия шаблона, без изменений
   actualization-rules.md      <- копия шаблона, без изменений
@@ -144,6 +145,8 @@
 Явно спросить пользователя, копировать ли как есть (без содержательных
 правок на этом шаге):
 - `commands.md` (команды `-commands`/`-QA`/`-commit`);
+- `guardrails.md` (быстрая справка — жёсткие правила, читать первым каждую
+  сессию и после сжатия контекста);
 - `working-conventions.md` (общие рабочие конвенции);
 - `token-economy.md` (правила экономии токенов);
 - `actualization-rules.md` (правила актуализации документации/артефактов);
@@ -235,8 +238,8 @@
 
 1. Создать `context/` в корне проекта.
 2. Перенести в `context/` (просто переименование/перемещение, содержимое не
-   меняется): `commands.md`, `working-conventions.md`, `token-economy.md`,
-   `actualization-rules.md`, `CONTEXT.md` (если использовался
+   меняется): `commands.md`, `guardrails.md`, `working-conventions.md`,
+   `token-economy.md`, `actualization-rules.md`, `CONTEXT.md` (если использовался
    `/grill-with-docs`), собственный `README.md` этого набора шаблонов
    («назначение и модель работы» — отдельно от проектного
    `docs/README.md` для git-хостинга, если он есть, тот тоже переносится,

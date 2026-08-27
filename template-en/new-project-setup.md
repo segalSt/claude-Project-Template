@@ -2,8 +2,8 @@
 
 Prompt for the assistant (Claude). Use it as the first message in a
 new chat when you need to start a new project with the context
-structure worked out here (tagsExpert): `commands.md`, `working-conventions.md`,
-`actualization-rules.md`, `docs/SPEC.md`, `docs/plan.md`, `docs/errors.md`,
+structure worked out here (tagsExpert): `commands.md`, `guardrails.md`,
+`working-conventions.md`, `actualization-rules.md`, `docs/SPEC.md`, `docs/plan.md`, `docs/errors.md`,
 `docs/qa-findings.md`, `docs/devHistory.md`, entry point
 `<ProjectName>Prompt.md`. Templates for all
 these files are in `templates/` — a copy of the same structure already
@@ -109,6 +109,7 @@ Don't move on to step 2 until at least items 1-4 have been answered.
 <project-root>/
   <ProjectName>Prompt.md      <- from templates/context-file-template.md
   commands.md                 <- copy of the template, unchanged
+  guardrails.md               <- copy of the template, unchanged
   working-conventions.md      <- copy of the template, unchanged
   token-economy.md            <- copy of the template, unchanged
   actualization-rules.md      <- copy of the template, unchanged
@@ -143,6 +144,8 @@ confirmation (they may want different names/location).
 Explicitly ask the user whether to copy as-is (without substantive
 edits at this step):
 - `commands.md` (commands `-commands`/`-QA`/`-commit`);
+- `guardrails.md` (quick reference — hard rules, read first every session
+  and after context compaction);
 - `working-conventions.md` (general working conventions);
 - `token-economy.md` (token-economy rules);
 - `actualization-rules.md` (rules for keeping documentation/artifacts up to date);
@@ -232,7 +235,7 @@ target file exists and reads correctly before removing its source.
 
 1. Create `context/` at the project root.
 2. Move into `context/` (a straight rename/move, content unchanged):
-   `commands.md`, `working-conventions.md`, `token-economy.md`,
+   `commands.md`, `guardrails.md`, `working-conventions.md`, `token-economy.md`,
    `actualization-rules.md`, `CONTEXT.md` (if `/grill-with-docs` was used),
    this toolkit's own `README.md` (the "purpose and working model" file —
    distinct from any project-specific `docs/README.md` for a git host,

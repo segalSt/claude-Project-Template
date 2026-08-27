@@ -5,7 +5,7 @@
 шаблона. Три сценария:
 
 - **A. Adopt** — проект вообще без структуры шаблона → завести файлы
-  контекста (`commands.md`, `working-conventions.md`, `actualization-rules.md`,
+  контекста (`commands.md`, `guardrails.md`, `working-conventions.md`, `actualization-rules.md`,
   `docs/SPEC.md`, `docs/plan.md`, `errors.md`, `devHistory.md`, точка входа).
 - **B. Split** — проект уже на шаблоне, но `plan.md` монолитный и перерос
   порог (см. `plan-template.md`) → разнести шаги по файлам
