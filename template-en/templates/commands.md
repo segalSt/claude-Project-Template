@@ -91,8 +91,12 @@ _Convention: a command is a single-dash token (`-plan`); its arguments/flags use
      "## TBD (discuss before applying)" section — the text, status `Open`.
      Implement nothing and change nothing in the plan/SPEC/code on the substance
      of the topic at this step.
-  2. Start the discussion in chat (questions/options/pros-cons) — the status
-     changes to `Discussing`.
+  2. Start the discussion in chat — the status changes to `Discussing`. Run
+     it as a `/grilling` round (call the Skill tool with "grilling"):
+     questions with recommendations, frontier at a time, wait for answers —
+     rather than an unstructured back-and-forth. If the topic touches new
+     domain vocabulary, call "domain-modeling" alongside it too (same as
+     `/grill-with-docs`), so any resolved terms land in `CONTEXT.md`.
   3. Based on the discussion — an explicit user decision:
      - accepted → status `Accepted`, the topic is moved into the plan as a separate
        step/edit, the number of this step is noted in the table;

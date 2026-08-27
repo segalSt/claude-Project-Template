@@ -17,7 +17,7 @@ not repeat the text of these rules.
   questions, evaluating/analyzing the request text — this is not a command to start edits.
 - **No assumptions — verify against the source first (non-avoidable).** Before
   stating any factual claim about code, data, or behavior as an answer, read the
-  actual source (code, XML, logs). If you need a source you don't have, ALWAYS ask
+  actual source (code, XML, logs). If you need a source you don't have, **ALWAYS** ask
   the user for it; only if it is confirmed unavailable may you state the claim,
   clearly signed `[assumption:]`. Never present a guess as a verified answer.
 - **The only command that means permission to start work —

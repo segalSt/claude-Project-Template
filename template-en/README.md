@@ -54,7 +54,8 @@ Key consequences (must be honored by `plan.md`, the commands, `migration.md`,
 
 ## Entry points
 
-- **New project from scratch** → `new-project-setup.md`.
+- **New project from scratch** → `new-project-setup.md` (its Step -1 forks
+  to `/wayfinder` first if the idea is too big/foggy for one session).
 - **Migrate an existing project** to this structure → `migration.md`
   (command `-migrate`/`-миграция`).
 - RU/EN template sync → `SYNC.md`.

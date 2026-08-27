@@ -214,3 +214,8 @@ preserve domain content, never layer.
   things live.
 - A `devHistory.md` entry about the migration (what changed and why).
 - `-commit` strictly by the real `git diff`.
+- For Scenario A (adopt): the same "Step 5 — cleanup" from
+  `new-project-setup.md` applies — move context files into `context/`,
+  delete `new-project-setup.md`/`migration.md`/`templates/` from the
+  project root, actualize paths. For B/C: same idea (consolidate context
+  files into `context/`) if the project isn't already laid out that way.

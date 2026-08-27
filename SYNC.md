@@ -1,34 +1,31 @@
 # Синхронизация RU / EN шаблона · Template RU / EN sync
 
-**Русская версия — источник истины.** Файлы:
-`README.md`, `new-project-setup.md`, `migration.md` + `templates/` (10 файлов, вкл. `token-economy.md`, `qa-findings.md`).
+**Обновление (2026-08-27): RU и EN — независимые, самостоятельные копии**
+(`template-ru/`, `template-en/`), не мастер + зеркало. Обязательное правило
+синхронизации отменено — расхождение между ними больше не считается
+устареванием само по себе.
 
-**Английская копия — `template-en/`** (зеркало той же структуры).
+Карта токенов ниже сохранена как справка: команды исторически унифицированы
+на латинице в обеих версиях — `-start`, `-commands`, `-plan`, `-QA`, `-new`,
+`-tbd`, `-commit`, `-drift`, `-park`. Аргументы — с двойным дефисом (`--s`,
+`--a`, `--c`, `--m`, `--t`, `--fix`, `--step`, `--day`, `--full`,
+`--hide-done`); команды — с одним.
 
-**Правило:** при ЛЮБОМ изменении русского шаблона в том же заходе
-актуализировать соответствующий файл в `template-en/` — перевод, та же
-структура, та же карта командных токенов. Расхождение RU/EN считается
-устареванием (правила актуализации).
-
-Карта токенов: токены команд теперь ОДИНАКОВЫ в RU и EN (латиница) —
-`-start`, `-commands`, `-plan`, `-QA`, `-new`, `-tbd`, `-commit`, `-drift`,
-`-park`. Аргументы — с двойным дефисом (`--s`, `--a`, `--c`, `--m`, `--t`,
-`--fix`, `--step`, `--day`, `--full`, `--hide-done`); команды — с одним.
-Токены команд полностью совпадают в RU и EN (латиница).
+Перенос улучшения из одной версии в другую — ручное, опциональное решение,
+не обязательный процесс.
 
 ---
 
-**Russian version is the source of truth.** Files: `README.md`,
-`new-project-setup.md`, `migration.md` + `templates/` (10 files, incl. `token-economy.md`, `qa-findings.md`).
-**English copy — `template-en/`** (mirror).
+**Update (2026-08-27): RU and EN are now independent, standalone copies**
+(`template-ru/`, `template-en/`), not master + mirror. The mandatory sync
+rule is retired — a divergence between them is no longer staleness by
+itself.
 
-**Rule:** on ANY change to the Russian template, update the matching file
-under `template-en/` in the same pass — translation, same structure, same
-command-token map above. An RU/EN divergence counts as staleness.
+The token map below is kept as reference: commands were historically
+unified to Latin tokens in both versions — `-start`, `-commands`, `-plan`,
+`-QA`, `-new`, `-tbd`, `-commit`, `-drift`, `-park`. Arguments use a double
+dash (`--s`, `--a`, `--c`, `--m`, `--t`, `--fix`, `--step`, `--day`,
+`--full`, `--hide-done`); commands use a single dash.
 
-**Проверка паритета / parity check:** расхождение RU/EN по СОСТАВУ файлов
-(файл есть в одной ветке и отсутствует в другой) должно ловиться проверкой
-паритета списка файлов там, где это возможно (аналог правила 12 в
-`actualization-rules.md` — дрейф, ловимый машинно, ловится проверкой, а не
-дисциплиной). Смысловую полноту перевода машина не проверит — это остаётся
-на ревью, но пропажу/лишний файл поймать можно и нужно.
+Porting an improvement from one version to the other is now a manual,
+optional choice, not a required process.
